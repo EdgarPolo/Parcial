@@ -41,19 +41,19 @@ elif clave == '040':
     print(f' Total: {total_con_descuento}')
 
 # Ejercicio numero 3
-precio_Producto = int(input('Ingrese el precio del producto : '))
+precio_Prod = int(input('Ingrese el precio del producto : '))
 marca = input('Ingrese la marca del producto: ')
-if precio_Producto >= 4000 and marca == 'nosy':
-    total_con_descuento = precio - (precio_Producto * 0.20) - (precio * 0.10)
-    total_con_iva = total_con_descuento + (precio_Producto * 0.30)
+if precio_Prod >= 4000 and marca == 'nosy':
+    total_descuento = precio_Prod - (precio_Prod * 0.20) - (precio_Prod * 0.10)
+    total_con_iva = total_descuento + (precio_Prod * 0.30)
     print(f' Total: {total_con_iva}')
-elif precio_Producto >= 4000:
-    total_con_descuento = precio_Producto - (precio_Producto * 0.20)
-    total_con_iva = total_con_descuento + (precio * 0.30)
+elif precio_Prod >= 4000:
+    total_descuento = precio_Prod - (precio_Prod * 0.20)
+    total_con_iva = total_descuento + (precio_Prod * 0.30)
     print(f' Total: {total_con_iva}')
 elif marca == 'nosy':
-    total_con_descuento = precio_Producto - (precio_Producto * 0.10)
-    total_con_iva = total_con_descuento + (precio_Producto * 0.30)
+    total_descuento = precio_Prod - (precio_Prod * 0.10)
+    total_con_iva = total_descuento + (precio_Prod * 0.30)
     print(f' Total: {total_con_iva}')
 
 # Ejercicio numero 4
